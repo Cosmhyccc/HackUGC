@@ -91,26 +91,12 @@ export default function AuthModal({ onClose, onSuccess }: Props) {
               We sent a magic link to
             </p>
             <p className="text-white text-sm font-mono mb-6">{email}</p>
-            <input
-              type="text"
-              placeholder="000000"
-              value={otp}
-              onChange={e => setOtp(e.target.value.replace(/\D/g, "").slice(0, 6))}
-              onKeyDown={e => e.key === "Enter" && otp.length === 6 && verifyOtp()}
-              className="w-full bg-black border border-[#1a1a1a] text-white font-mono px-4 py-3 rounded text-sm outline-none focus:border-[#00ff41] transition-colors mb-4 placeholder:text-[#333] tracking-[0.5em] text-center text-lg"
-              maxLength={6}
-            />
-            {error && <p className="text-red-500 text-xs font-mono mb-4">{error}</p>}
+            <p className="text-[#555] text-xs font-mono mb-6">
+              Click the link in your email to sign in. You can close this.
+            </p>
             <button
-              onClick={verifyOtp}
-              disabled={otp.length !== 6 || loading}
-              className="w-full bg-[#00ff41] text-black font-mono font-bold py-3 rounded text-sm hover:bg-[#00cc33] transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
-            >
-              {loading ? "VERIFYING..." : "VERIFY →"}
-            </button>
-            <button
-              onClick={() => { setStep("email"); setError(""); setOtp(""); }}
-              className="w-full mt-3 text-[#555] font-mono text-xs hover:text-white transition-colors"
+              onClick={() => { setStep("email"); setError(""); }}
+              className="w-full mt-1 text-[#555] font-mono text-xs hover:text-white transition-colors"
             >
               ← use a different email
             </button>
