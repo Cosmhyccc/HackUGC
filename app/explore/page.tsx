@@ -4,6 +4,13 @@ import { useState, useEffect, useCallback, useRef } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Suspense } from "react";
 import type { TrendingVideo } from "@/lib/scrapecreators";
+import AuthModal from "@/components/AuthModal";
+import PaywallOverlay from "@/components/PaywallOverlay";
+import PricingModal from "@/components/PricingModal";
+import { createClient } from "@/lib/supabase/client";
+
+const FREE_VIDEO_LIMIT = 6;
+const FREE_LEARNING_LIMIT = 3;
 
 // ── Intelligence types ────────────────────────────────────────────────────────
 
@@ -180,7 +187,7 @@ function BarChart({ title, rows, valueKey, labelKey, unit = "" }: {
   );
 }
 
-function ResearchTab() {
+function ResearchTab({ isSubscribed, onPaywall }: { isSubscribed: boolean; onPaywall: () => void }) {
   const [intel, setIntel] = useState<Intelligence | null>(null);
   const [loading, setLoading] = useState(true);
 
@@ -238,38 +245,71 @@ function ResearchTab() {
           <p className="text-white text-[9px] tracking-widest uppercase mb-4" style={{ fontFamily: "var(--font-space-mono)" }}>
             What the data says — click any insight to see source videos
           </p>
-          {intel.learnings.map((l, i) => (
+          {/* Free: show top 3, blur rest */}
+          {intel.learnings.slice(0, FREE_LEARNING_LIMIT).map((l, i) => (
             <LearningCard key={i} learning={l} videos={intel.videos} index={i} />
+          ))}
+          {!isSubscribed && intel.learnings.length > FREE_LEARNING_LIMIT && (
+            <div className="relative">
+              <div className="space-y-3 select-none pointer-events-none" style={{ filter: "blur(6px)" }}>
+                {intel.learnings.slice(FREE_LEARNING_LIMIT).map((l, i) => (
+                  <LearningCard key={i} learning={l} videos={intel.videos} index={i + FREE_LEARNING_LIMIT} />
+                ))}
+              </div>
+              <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/60 rounded-lg">
+                <p className="text-white font-mono text-sm font-bold mb-3">
+                  {intel.learnings.length - FREE_LEARNING_LIMIT} more insights locked
+                </p>
+                <button onClick={onPaywall}
+                  className="bg-[#00ff41] text-black font-mono font-bold text-xs px-5 py-2.5 rounded tracking-widest uppercase hover:bg-[#00cc33] transition-colors">
+                  SUBSCRIBE TO UNLOCK →
+                </button>
+              </div>
+            </div>
+          )}
+          {isSubscribed && intel.learnings.slice(FREE_LEARNING_LIMIT).map((l, i) => (
+            <LearningCard key={i + FREE_LEARNING_LIMIT} learning={l} videos={intel.videos} index={i + FREE_LEARNING_LIMIT} />
           ))}
         </div>
 
-        {/* Right: Charts */}
-        <div className="lg:col-span-2 space-y-8">
-          {intel.patterns.topFormats?.length > 0 && (
-            <BarChart
-              title="Format · Avg Engagement Rate"
-              rows={intel.patterns.topFormats}
-              labelKey="format"
-              valueKey="avgEngRate"
-              unit="%"
-            />
+        {/* Right: Charts — blurred for free users */}
+        <div className={`lg:col-span-2 space-y-8 relative ${!isSubscribed ? "select-none pointer-events-none" : ""}`}>
+          {!isSubscribed && (
+            <div className="absolute inset-0 z-10 flex flex-col items-center justify-center rounded-lg" style={{ background: "rgba(0,0,0,0.7)" }}>
+              <p className="text-white font-mono text-sm font-bold mb-3">Charts locked</p>
+              <button onClick={onPaywall}
+                className="bg-[#00ff41] text-black font-mono font-bold text-xs px-5 py-2.5 rounded tracking-widest uppercase hover:bg-[#00cc33] transition-colors pointer-events-auto">
+                SUBSCRIBE →
+              </button>
+            </div>
           )}
-          {intel.patterns.topIndustries?.length > 0 && (
-            <BarChart
-              title="Industry · Video Count"
-              rows={intel.patterns.topIndustries}
-              labelKey="industry"
-              valueKey="count"
-            />
-          )}
-          {intel.patterns.topIndustries?.length > 0 && (
-            <BarChart
-              title="Industry · Avg Views"
-              rows={intel.patterns.topIndustries}
-              labelKey="industry"
-              valueKey="avgViews"
-            />
-          )}
+          <div style={!isSubscribed ? { filter: "blur(6px)" } : {}}>
+            {intel.patterns.topFormats?.length > 0 && (
+              <BarChart
+                title="Format · Avg Engagement Rate"
+                rows={intel.patterns.topFormats}
+                labelKey="format"
+                valueKey="avgEngRate"
+                unit="%"
+              />
+            )}
+            {intel.patterns.topIndustries?.length > 0 && (
+              <BarChart
+                title="Industry · Video Count"
+                rows={intel.patterns.topIndustries}
+                labelKey="industry"
+                valueKey="count"
+              />
+            )}
+            {intel.patterns.topIndustries?.length > 0 && (
+              <BarChart
+                title="Industry · Avg Views"
+                rows={intel.patterns.topIndustries}
+                labelKey="industry"
+                valueKey="avgViews"
+              />
+            )}
+          </div>
         </div>
       </div>
     </div>
@@ -606,10 +646,12 @@ function VideoCard({ video, onClick }: { video: TrendingVideo; onClick: () => vo
 
 // ── Video Grid ────────────────────────────────────────────────────────────────
 
-function VideoGrid({ videos, loading, onCardClick }: {
+function VideoGrid({ videos, loading, onCardClick, isSubscribed, onPaywall }: {
   videos: TrendingVideo[];
   loading: boolean;
   onCardClick: (i: number) => void;
+  isSubscribed: boolean;
+  onPaywall: () => void;
 }) {
   if (loading) {
     return (
@@ -627,11 +669,46 @@ function VideoGrid({ videos, loading, onCardClick }: {
       </div>
     );
   }
+
+  const visibleVideos = isSubscribed ? videos : videos.slice(0, FREE_VIDEO_LIMIT);
+  const lockedVideos = isSubscribed ? [] : videos.slice(FREE_VIDEO_LIMIT);
+
   return (
-    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3">
-      {videos.map((video, i) => (
-        <VideoCard key={video.id || `v-${i}`} video={video} onClick={() => onCardClick(i)} />
-      ))}
+    <div className="relative">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3">
+        {visibleVideos.map((video, i) => (
+          <VideoCard key={video.id || `v-${i}`} video={video} onClick={() => onCardClick(i)} />
+        ))}
+        {lockedVideos.length > 0 && (
+          <>
+            {/* Blurred ghost cards */}
+            {lockedVideos.slice(0, 10).map((video, i) => (
+              <div key={`locked-${i}`} className="aspect-[9/16] rounded-xl overflow-hidden relative"
+                style={{ filter: "blur(8px)", opacity: 0.4 }}>
+                <div className="w-full h-full bg-[#0d0d0d] border border-[#1a1a1a]" />
+              </div>
+            ))}
+          </>
+        )}
+      </div>
+      {/* Paywall overlay gradient + CTA */}
+      {lockedVideos.length > 0 && (
+        <div className="absolute bottom-0 left-0 right-0 h-64 flex items-end justify-center pb-8"
+          style={{ background: "linear-gradient(to top, rgba(0,0,0,1) 40%, transparent 100%)" }}>
+          <div className="text-center">
+            <p className="text-[#00ff41] font-mono text-xs tracking-widest uppercase mb-2">
+              +{lockedVideos.length} videos locked
+            </p>
+            <p className="text-white font-mono text-sm font-bold mb-4">
+              Subscribe to unlock the full feed
+            </p>
+            <button onClick={onPaywall}
+              className="bg-[#00ff41] text-black font-mono font-bold text-xs px-6 py-3 rounded tracking-widest uppercase hover:bg-[#00cc33] transition-colors">
+              SUBSCRIBE →
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
@@ -646,9 +723,56 @@ function ExploreContent() {
   const [label, setLabel] = useState("Trending Now · US · Last 7 Days");
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
 
+  // Auth state
+  const [user, setUser] = useState<{ id: string; email: string } | null>(null);
+  const [isSubscribed, setIsSubscribed] = useState(false);
+  const [showAuthModal, setShowAuthModal] = useState(false);
+  const [showPricingModal, setShowPricingModal] = useState(false);
+
   const router = useRouter();
   const searchParams = useSearchParams();
   const initialQ = searchParams.get("q") ?? "";
+  const justSubscribed = searchParams.get("subscribed") === "true";
+
+  // Check session on mount + listen for auth changes
+  useEffect(() => {
+    // If coming back from Stripe, poll until subscription is active
+    const checkMe = () => fetch("/api/auth/me").then(r => r.json()).then(d => { setUser(d.user); setIsSubscribed(d.isSubscribed); }).catch(() => {});
+    checkMe();
+    if (justSubscribed) {
+      // Webhook may take a second — poll a couple times
+      setTimeout(checkMe, 2000);
+      setTimeout(checkMe, 5000);
+    }
+
+    const supabase = createClient();
+    const { data: { subscription } } = supabase.auth.onAuthStateChange(() => {
+      fetch("/api/auth/me")
+        .then(r => r.json())
+        .then(d => { setUser(d.user); setIsSubscribed(d.isSubscribed); })
+        .catch(() => {});
+    });
+    return () => subscription.unsubscribe();
+  }, []);
+
+  async function handleSignOut() {
+    await fetch("/api/auth/signout", { method: "POST" });
+    setUser(null);
+    setIsSubscribed(false);
+  }
+
+  function handlePaywall() {
+    if (!user) { setShowAuthModal(true); return; }
+    setShowPricingModal(true);
+  }
+
+  function handleAuthSuccess() {
+    setShowAuthModal(false);
+    // Re-check session
+    fetch("/api/auth/me")
+      .then(r => r.json())
+      .then(d => { setUser(d.user); setIsSubscribed(d.isSubscribed); });
+  }
 
   useEffect(() => {
     async function load() {
@@ -699,9 +823,29 @@ function ExploreContent() {
             </button>
           ))}
         </div>
-        <div className="flex items-center gap-2">
-          <span className="w-1.5 h-1.5 rounded-full bg-[#00ff41] animate-pulse" />
-          <span className="text-[10px] text-[#444]" style={{ fontFamily: "var(--font-space-mono)" }}>LIVE</span>
+        <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#00ff41] animate-pulse" />
+            <span className="text-[10px] text-[#444]" style={{ fontFamily: "var(--font-space-mono)" }}>LIVE</span>
+          </div>
+          {user ? (
+            <div className="flex items-center gap-3">
+              {isSubscribed && (
+                <span className="text-[#00ff41] text-[9px] font-mono tracking-widest uppercase border border-[#00ff41]/30 px-2 py-0.5 rounded">PRO</span>
+              )}
+              <span className="text-[#555] text-[10px] font-mono hidden sm:block">{user.email}</span>
+              <button onClick={handleSignOut}
+                className="text-[#333] text-[10px] font-mono hover:text-white transition-colors">
+                sign out
+              </button>
+            </div>
+          ) : (
+            <button onClick={() => setShowAuthModal(true)}
+              className="text-[10px] font-mono text-[#555] hover:text-[#00ff41] transition-colors tracking-widest uppercase"
+              style={{ fontFamily: "var(--font-space-mono)" }}>
+              Sign in
+            </button>
+          )}
         </div>
       </header>
 
@@ -712,10 +856,10 @@ function ExploreContent() {
               <span className="w-1.5 h-1.5 rounded-full bg-[#00ff41] animate-pulse" />
               <h2 className="text-xs text-white tracking-[0.3em] uppercase" style={{ fontFamily: "var(--font-space-mono)" }}>{label}</h2>
             </div>
-            <VideoGrid videos={videos} loading={loading} onCardClick={setSelectedIndex} />
+            <VideoGrid videos={videos} loading={loading} onCardClick={setSelectedIndex} isSubscribed={isSubscribed} onPaywall={handlePaywall} />
           </>
         ) : (
-          <ResearchTab />
+          <ResearchTab isSubscribed={isSubscribed} onPaywall={handlePaywall} />
         )}
       </main>
 
@@ -740,6 +884,18 @@ function ExploreContent() {
 
       {selectedIndex !== null && videos[selectedIndex] && (
         <VideoModal video={videos[selectedIndex]} onClose={closeModal} onPrev={prevVideo} onNext={nextVideo} />
+      )}
+
+      {showAuthModal && (
+        <AuthModal onClose={() => setShowAuthModal(false)} onSuccess={handleAuthSuccess} />
+      )}
+
+      {showPricingModal && (
+        <PricingModal
+          onClose={() => setShowPricingModal(false)}
+          onSignIn={() => setShowAuthModal(true)}
+          isLoggedIn={!!user}
+        />
       )}
     </div>
   );
