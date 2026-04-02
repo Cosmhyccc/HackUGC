@@ -1,0 +1,23 @@
+{
+  "apps": [
+    {
+      "name": "LingoBear",
+      "slug": "lingobear",
+      "category": "language-learning",
+      "description": "AI voice language learning iOS app. You speak, it coaches you in real time with AI conversation.",
+      "differentiator": "Voice-first conversational AI — not flashcard-based like Duolingo",
+      "target": "People who want to actually speak a language, not just memorize vocab",
+      "status": "launching"
+    },
+    {
+      "name": "BookBuds",
+      "slug": "bookbuds",
+      "category": "social-reading",
+      "description": "Read with friends iOS app. Social reading experience — share highlights, read together.",
+      "differentiator": "Reading is a shared experience, not a solo activity",
+      "target": "Book lovers who want community around reading",
+      "status": "live",
+      "mrr": 3000
+    }
+  ]
+}

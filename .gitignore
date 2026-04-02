@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# generated data (large, machine-specific)
+data/ugc_intelligence.json
+data/analysis_cache.json
+data/learnings/
+data/learnings.md

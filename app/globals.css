@@ -1,26 +1,73 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg: #000000;
+  --surface: #0d0d0d;
+  --border: #1a1a1a;
+  --green: #00ff41;
+  --green-dim: #00cc33;
+  --text: #ffffff;
+  --text-muted: #666666;
+  --text-dim: #999999;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-background: var(--bg);
+  --color-foreground: var(--text);
+  --color-green: var(--green);
+  --color-surface: var(--surface);
+  --color-border: var(--border);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', system-ui, sans-serif;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Retro green glow utility */
+.glow-green {
+  box-shadow: 0 0 12px rgba(0, 255, 65, 0.4);
+}
+
+.glow-green-text {
+  text-shadow: 0 0 10px rgba(0, 255, 65, 0.6);
+}
+
+/* Retro scanline divider */
+.scanline-border {
+  border: 1px solid var(--border);
+  position: relative;
+}
+
+/* Xbox-style chunky border */
+.xbox-border {
+  border: 2px solid var(--border);
+  border-radius: 4px;
+}
+
+.xbox-border:hover {
+  border-color: var(--green);
+  box-shadow: 0 0 8px rgba(0, 255, 65, 0.3);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--green);
 }
