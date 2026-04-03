@@ -682,9 +682,10 @@ function VideoGrid({ videos, loading, onCardClick, isSubscribed, onPaywall }: {
         {lockedVideos.length > 0 && (
           <div className="relative col-span-2 md:col-span-1 lg:col-span-2 xl:col-span-3">
             {/* Blurred ghost cards in same row */}
-            <div className="grid grid-cols-2 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-3" style={{ filter: "blur(8px)", opacity: 0.35 }}>
+            <div className="grid grid-cols-2 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-3" style={{ filter: "blur(6px)", opacity: 0.5 }}>
               {lockedVideos.slice(0, 3).map((_, i) => (
-                <div key={i} className="aspect-[9/16] rounded-xl bg-[#0d0d0d] border border-[#1a1a1a]" />
+                <div key={i} className="aspect-[9/16] rounded-xl bg-[#1a1a1a] border border-[#333]"
+                  style={{ backgroundImage: "linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 50%, #1a1a1a 100%)" }} />
               ))}
             </div>
             {/* Overlay CTA centered on top */}
