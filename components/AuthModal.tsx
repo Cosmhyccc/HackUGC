@@ -20,7 +20,7 @@ export default function AuthModal({ onClose, onSuccess }: Props) {
     const res = await fetch("/api/auth/send-otp", {
       method: "POST",
       headers: { "content-type": "application/json" },
-      body: JSON.stringify({ email }),
+      body: JSON.stringify({ email, next: window.location.href }),
     });
     const data = await res.json();
     setLoading(false);
