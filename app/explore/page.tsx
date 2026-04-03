@@ -256,7 +256,7 @@ function ResearchTab({ isSubscribed, onPaywall }: { isSubscribed: boolean; onPay
                   <LearningCard key={i} learning={l} videos={intel.videos} index={i + FREE_LEARNING_LIMIT} />
                 ))}
               </div>
-              <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/60 rounded-lg">
+              <div className="absolute inset-0 flex flex-col items-center justify-start pt-12 bg-black/60 rounded-lg">
                 <p className="text-white font-mono text-sm font-bold mb-3">
                   {intel.learnings.length - FREE_LEARNING_LIMIT} more insights locked
                 </p>
@@ -275,7 +275,7 @@ function ResearchTab({ isSubscribed, onPaywall }: { isSubscribed: boolean; onPay
         {/* Right: Charts — blurred for free users */}
         <div className={`lg:col-span-2 space-y-8 relative ${!isSubscribed ? "select-none pointer-events-none" : ""}`}>
           {!isSubscribed && (
-            <div className="absolute inset-0 z-10 flex flex-col items-center justify-center rounded-lg" style={{ background: "rgba(0,0,0,0.7)" }}>
+            <div className="absolute inset-0 z-10 flex flex-col items-center justify-start pt-12 rounded-lg" style={{ background: "rgba(0,0,0,0.7)" }}>
               <p className="text-white font-mono text-sm font-bold mb-3">Charts locked</p>
               <button onClick={onPaywall}
                 className="bg-[#00ff41] text-black font-mono font-bold text-xs px-5 py-2.5 rounded tracking-widest uppercase hover:bg-[#00cc33] transition-colors pointer-events-auto">
@@ -693,7 +693,7 @@ function VideoGrid({ videos, loading, onCardClick, isSubscribed, onPaywall }: {
       </div>
       {/* Paywall overlay gradient + CTA */}
       {lockedVideos.length > 0 && (
-        <div className="absolute bottom-0 left-0 right-0 h-64 flex items-end justify-center pb-8"
+        <div className="absolute bottom-0 left-0 right-0 h-64 flex items-end justify-center pb-16"
           style={{ background: "linear-gradient(to top, rgba(0,0,0,1) 40%, transparent 100%)" }}>
           <div className="text-center">
             <p className="text-[#00ff41] font-mono text-xs tracking-widest uppercase mb-2">
