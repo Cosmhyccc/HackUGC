@@ -680,9 +680,15 @@ function VideoGrid({ videos, loading, onCardClick, isSubscribed, onPaywall }: {
           <VideoCard key={video.id || `v-${i}`} video={video} onClick={() => onCardClick(i)} />
         ))}
         {lockedVideos.length > 0 && (
-          <>
-            {/* Inline paywall CTA — spans full row */}
-            <div className="col-span-2 md:col-span-3 lg:col-span-4 xl:col-span-5 flex flex-col items-center justify-center py-8 border border-[#1a1a1a] rounded-xl bg-[#0d0d0d]">
+          <div className="relative col-span-2 md:col-span-1 lg:col-span-2 xl:col-span-3">
+            {/* Blurred ghost cards in same row */}
+            <div className="grid grid-cols-2 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-3" style={{ filter: "blur(8px)", opacity: 0.35 }}>
+              {lockedVideos.slice(0, 3).map((_, i) => (
+                <div key={i} className="aspect-[9/16] rounded-xl bg-[#0d0d0d] border border-[#1a1a1a]" />
+              ))}
+            </div>
+            {/* Overlay CTA centered on top */}
+            <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/60 rounded-xl">
               <p className="text-[#00ff41] font-mono text-xs tracking-widest uppercase mb-2">
                 +{lockedVideos.length} videos locked
               </p>
@@ -694,14 +700,7 @@ function VideoGrid({ videos, loading, onCardClick, isSubscribed, onPaywall }: {
                 SUBSCRIBE →
               </button>
             </div>
-            {/* Blurred ghost cards */}
-            {lockedVideos.slice(0, 10).map((video, i) => (
-              <div key={`locked-${i}`} className="aspect-[9/16] rounded-xl overflow-hidden relative"
-                style={{ filter: "blur(8px)", opacity: 0.3 }}>
-                <div className="w-full h-full bg-[#0d0d0d] border border-[#1a1a1a]" />
-              </div>
-            ))}
-          </>
+          </div>
         )}
       </div>
     </div>
