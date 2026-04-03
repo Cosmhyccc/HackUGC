@@ -690,7 +690,7 @@ function VideoGrid({ videos, loading, onCardClick, isSubscribed, onPaywall }: {
             {/* Overlay CTA centered on top */}
             <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/60 rounded-xl">
               <p className="text-[#00ff41] font-mono text-xs tracking-widest uppercase mb-2">
-                +{lockedVideos.length} videos locked
+                10,000+ videos locked
               </p>
               <p className="text-white font-mono text-sm font-bold mb-4">
                 Subscribe to unlock the full feed
