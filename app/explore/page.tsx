@@ -9,7 +9,7 @@ import PaywallOverlay from "@/components/PaywallOverlay";
 import PricingModal from "@/components/PricingModal";
 import { createClient } from "@/lib/supabase/client";
 
-const FREE_VIDEO_LIMIT = 6;
+const FREE_VIDEO_LIMIT = 2;
 const FREE_LEARNING_LIMIT = 3;
 
 // ── Intelligence types ────────────────────────────────────────────────────────
@@ -681,34 +681,29 @@ function VideoGrid({ videos, loading, onCardClick, isSubscribed, onPaywall }: {
         ))}
         {lockedVideos.length > 0 && (
           <>
+            {/* Inline paywall CTA — spans full row */}
+            <div className="col-span-2 md:col-span-3 lg:col-span-4 xl:col-span-5 flex flex-col items-center justify-center py-8 border border-[#1a1a1a] rounded-xl bg-[#0d0d0d]">
+              <p className="text-[#00ff41] font-mono text-xs tracking-widest uppercase mb-2">
+                +{lockedVideos.length} videos locked
+              </p>
+              <p className="text-white font-mono text-sm font-bold mb-4">
+                Subscribe to unlock the full feed
+              </p>
+              <button onClick={onPaywall}
+                className="bg-[#00ff41] text-black font-mono font-bold text-xs px-6 py-3 rounded tracking-widest uppercase hover:bg-[#00cc33] transition-colors">
+                SUBSCRIBE →
+              </button>
+            </div>
             {/* Blurred ghost cards */}
             {lockedVideos.slice(0, 10).map((video, i) => (
               <div key={`locked-${i}`} className="aspect-[9/16] rounded-xl overflow-hidden relative"
-                style={{ filter: "blur(8px)", opacity: 0.4 }}>
+                style={{ filter: "blur(8px)", opacity: 0.3 }}>
                 <div className="w-full h-full bg-[#0d0d0d] border border-[#1a1a1a]" />
               </div>
             ))}
           </>
         )}
       </div>
-      {/* Paywall overlay gradient + CTA */}
-      {lockedVideos.length > 0 && (
-        <div className="absolute bottom-0 left-0 right-0 h-64 flex items-end justify-center pb-16"
-          style={{ background: "linear-gradient(to top, rgba(0,0,0,1) 40%, transparent 100%)" }}>
-          <div className="text-center">
-            <p className="text-[#00ff41] font-mono text-xs tracking-widest uppercase mb-2">
-              +{lockedVideos.length} videos locked
-            </p>
-            <p className="text-white font-mono text-sm font-bold mb-4">
-              Subscribe to unlock the full feed
-            </p>
-            <button onClick={onPaywall}
-              className="bg-[#00ff41] text-black font-mono font-bold text-xs px-6 py-3 rounded tracking-widest uppercase hover:bg-[#00cc33] transition-colors">
-              SUBSCRIBE →
-            </button>
-          </div>
-        </div>
-      )}
     </div>
   );
 }
