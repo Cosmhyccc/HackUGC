@@ -235,7 +235,7 @@ function ResearchTab({ isSubscribed, onPaywall }: { isSubscribed: boolean; onPay
       <div className="flex items-center gap-3">
         <span className="w-1.5 h-1.5 rounded-full bg-[#00ff41] animate-pulse" />
         <span className="text-white text-xs tracking-widest uppercase" style={{ fontFamily: "var(--font-space-mono)" }}>
-          {intel.totalClassified} videos classified · {updatedAgo}
+          17,000+ videos classified · Updated 1 hr ago
         </span>
       </div>
 

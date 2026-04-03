@@ -42,7 +42,7 @@ export default function LandingPage() {
       <div className="relative z-10 flex-1 flex flex-col items-center justify-center px-6 text-center">
 
         {/* Badges */}
-        <img src="/badgesss.png" alt="badges" className="mb-6 h-16 opacity-80" />
+        <img src="/badgesss.png" alt="badges" className="mb-6 h-28 opacity-90" />
 
         {/* Live badge */}
         <div className="mb-8 inline-flex items-center gap-2 border border-[#1a1a1a] rounded-full px-4 py-1.5">
