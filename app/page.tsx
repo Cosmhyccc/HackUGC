@@ -36,13 +36,6 @@ export default function LandingPage() {
         >
           HACK<span className="text-white">UGC</span>
         </span>
-        <a
-          href="/explore"
-          className="text-xs text-[#555] hover:text-[#00ff41] tracking-widest uppercase transition-colors"
-          style={{ fontFamily: "var(--font-space-mono)" }}
-        >
-          Explore →
-        </a>
       </header>
 
       {/* Hero — centered */}
@@ -92,7 +85,7 @@ export default function LandingPage() {
               type="text"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              placeholder="Paste your App Store link or search any niche..."
+              placeholder="Search any niche, hook, or keyword..."
               className="flex-1 bg-transparent text-white text-sm placeholder-[#444] outline-none"
               style={{ fontFamily: "var(--font-inter)" }}
             />
