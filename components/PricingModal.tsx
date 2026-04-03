@@ -29,6 +29,7 @@ export default function PricingModal({ onClose, onSignIn, isLoggedIn }: Props) {
         <button onClick={onClose}
           className="absolute top-4 right-4 text-[#555] hover:text-white transition-colors text-lg">✕</button>
 
+        <img src="/badgesss.png" alt="badges" className="mb-4 h-12 opacity-80" />
         <div className="text-[#00ff41] font-mono text-xl font-bold mb-1">HACKUGC PRO</div>
         <p className="text-[#555] font-mono text-sm mb-8">
           Unlock the full TikTok UGC intelligence dashboard.
