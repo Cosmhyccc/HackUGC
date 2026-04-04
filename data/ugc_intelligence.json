@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-04-02T22:42:03.756Z",
-  "totalClassified": 190,
+  "lastUpdated": "2026-04-04T23:16:16.985Z",
+  "totalClassified": 234,
   "videos": [
     {
       "id": "7613094319662042390",
@@ -2661,19 +2661,640 @@
       "industry": "Lifestyle",
       "hook": "iPhone tricks and tips compilation.",
       "insight": "Broad tips format with high view count indicates algorithm favor for device optimization content."
+    },
+    {
+      "id": "7618779876627156254",
+      "url": "https://www.tiktok.com/@aspenfinallyrichh/video/7618779876627156254",
+      "handle": "@aspenfinallyrichh",
+      "caption": "Aspen Kartier is back & on Catzy an self care app Check it out💞🙈",
+      "views": 297128,
+      "likes": 26348,
+      "engRate": "9.05",
+      "classifiedAt": "2026-04-04T21:07:09.493Z",
+      "format": "Talking Head",
+      "industry": "Health",
+      "hook": "Celebrity endorsement of a self-care app with social proof.",
+      "insight": "Influencer credibility drives app discovery when the creator demonstrates personal use and enthusiasm."
+    },
+    {
+      "id": "7620636315184352525",
+      "url": "https://www.tiktok.com/@leadwithzoe/video/7620636315184352525",
+      "handle": "@leadwithzoe",
+      "caption": "everyone i tell about claude says the same thing. the best way to start with claude is having it manage your calendar. here are 3 ways for claude to add events to your calendar: - just talk to it: dow",
+      "views": 363543,
+      "likes": 24005,
+      "engRate": "7.43",
+      "classifiedAt": "2026-04-04T21:07:09.493Z",
+      "format": "Hook+Demo",
+      "industry": "B2B",
+      "hook": "Social proof through testimonials about Claude's calendar management capability.",
+      "insight": "Use case-specific demos with multiple feature pathways show practical AI app value for everyday tasks."
+    },
+    {
+      "id": "7620665083475070215",
+      "url": "https://www.tiktok.com/@jacky1834997/video/7620665083475070215",
+      "handle": "@jacky1834997",
+      "caption": "ဓာတ်ပုံတစ်ပုံထဲနဲ့ ချစ်စရာကောင်းတဲ့ ကလေးလက်ဟန်ခြေဟန်အကဗီဒီယိုတွေကို အခုပဲ ဖန်တီးလိုက်ပါ ✨📸🎬  ပြုလုပ်ပုံက အရမ်းလွယ်ကူပါတယ် — ဗီဒီယိုလင့်ခ်ကို ကူးယူပါ → Kling AI ကိုဖွင့်ပါ → template ထဲမှာ ပုံရွေးလို",
+      "views": 369591,
+      "likes": 12055,
+      "engRate": "5.04",
+      "classifiedAt": "2026-04-04T21:07:09.493Z",
+      "format": "App Demo",
+      "industry": "Entertainment",
+      "hook": "AI-powered video creation from a single photo with step-by-step instructions.",
+      "insight": "Tutorial-style demos with clear call-to-action steps simplify app onboarding and encourage downloads."
+    },
+    {
+      "id": "7624006692308585746",
+      "url": "https://www.tiktok.com/@beat9985f9r/video/7624006692308585746",
+      "handle": "@beat9985f9r",
+      "caption": "Copy the link → Download the Keling App → Get this JoJo Steel Ball Run live wallpaper instantly! #steelballrun #4kwallpaper #sbr #KLingCreators#KlingAI ",
+      "views": 838148,
+      "likes": 53279,
+      "engRate": "7.52",
+      "classifiedAt": "2026-04-04T21:07:09.493Z",
+      "format": "App Demo",
+      "industry": "Entertainment",
+      "hook": "Direct link-to-download with specific customization outcome (live wallpaper).",
+      "insight": "Clear CTA with tangible visual reward makes app adoption frictionless."
+    },
+    {
+      "id": "7624547361569787144",
+      "url": "https://www.tiktok.com/@rrjasja/video/7624547361569787144",
+      "handle": "@rrjasja",
+      "caption": "I love the way I can enjoy my fav edits with @iScreenApp ♡ #jungkookedit #bts_arirang #iScreen #charginganimation #androidtips Jungkook live wallpaper",
+      "views": 118135,
+      "likes": 44870,
+      "engRate": "39.42",
+      "classifiedAt": "2026-04-04T21:07:09.493Z",
+      "format": "Talking Head",
+      "industry": "Entertainment",
+      "hook": "Personal endorsement of app feature with branded tag.",
+      "insight": "Short testimonial format with niche appeal (fan edits) targets passionate communities."
+    },
+    {
+      "id": "7624355121081765138",
+      "url": "https://www.tiktok.com/@truong_tomato/video/7624355121081765138",
+      "handle": "@truong_tomato",
+      "caption": "Im testing it, expect to live on App Store next week 100% free im doing it just for the love of the game 🥹🫶🏻 #app #stamp #fyp ",
+      "views": 98764,
+      "likes": 8481,
+      "engRate": "9.86",
+      "classifiedAt": "2026-04-04T21:07:09.493Z",
+      "format": "Talking Head",
+      "industry": "Games",
+      "hook": "Developer testing new app before App Store launch with free commitment.",
+      "insight": "Transparency about development stage builds community trust and early adopter enthusiasm."
+    },
+    {
+      "id": "7622424210358521110",
+      "url": "https://www.tiktok.com/@user_0936921723/video/7622424210358521110",
+      "handle": "@user_0936921723",
+      "caption": "fun games to download on your ipad 🌟#ipadgames #fyp #stockholm ",
+      "views": 58153,
+      "likes": 1641,
+      "engRate": "2.93",
+      "classifiedAt": "2026-04-04T21:07:09.493Z",
+      "format": "App Demo",
+      "industry": "Games",
+      "hook": "Curated list of iPad games for discovery.",
+      "insight": "Device-specific app recommendations leverage platform loyalty to drive targeted downloads."
+    },
+    {
+      "id": "7623669130599730450",
+      "url": "https://www.tiktok.com/@pr.ly5/video/7623669130599730450",
+      "handle": "@pr.ly5",
+      "caption": "#CapCut ❤️‍🩹",
+      "views": 246646,
+      "likes": 25722,
+      "engRate": "12.36",
+      "classifiedAt": "2026-04-04T21:07:09.493Z",
+      "format": "Silent UGC",
+      "industry": "Entertainment",
+      "hook": "Hashtag-driven CapCut content creation showcase.",
+      "insight": "Community-driven hashtag campaigns amplify organic reach through user-generated editing content."
+    },
+    {
+      "id": "7614654476238048542",
+      "url": "https://www.tiktok.com/@oregon_isthebeststate/video/7614654476238048542",
+      "handle": "@oregon_isthebeststate",
+      "caption": "frame by frame animation app for iphone / iOS  |  tbh it isn’t that bad but i think it should have more brush options ! #animation #app #art #appstore ",
+      "views": 50165,
+      "likes": 1847,
+      "engRate": "4.05",
+      "classifiedAt": "2026-04-04T21:07:09.493Z",
+      "format": "App Demo",
+      "industry": "Entertainment",
+      "hook": "Honest app review with constructive feature feedback.",
+      "insight": "Balanced reviews with both praise and suggestions build credibility and attract serious users."
+    },
+    {
+      "id": "7615013232905882902",
+      "url": "https://www.tiktok.com/@nxtcoreee3/video/7615013232905882902",
+      "handle": "@nxtcoreee3",
+      "caption": "iOS 26.5 Beta 1 has the iPhone Privacy Screen 🥹 #fyp #viral #foryou #iphone #ios ",
+      "views": 4454783,
+      "likes": 82545,
+      "engRate": "2.01",
+      "classifiedAt": "2026-04-04T21:07:22.482Z",
+      "format": "App Demo",
+      "industry": "Lifestyle",
+      "hook": "New iOS feature announcement creates curiosity about hidden phone capabilities.",
+      "insight": "Quick feature reveals capitalize on viral Apple update cycles with minimal explanation needed."
+    },
+    {
+      "id": "7620705145872977182",
+      "url": "https://www.tiktok.com/@carterpcs/video/7620705145872977182",
+      "handle": "@carterpcs",
+      "caption": "Is Apple keeping the photos app bad on purpose?? #carterpcs #Tech #ios ",
+      "views": 569306,
+      "likes": 70355,
+      "engRate": "12.57",
+      "classifiedAt": "2026-04-04T21:07:22.482Z",
+      "format": "Talking Head",
+      "industry": "Lifestyle",
+      "hook": "Provocative question challenges user assumptions about Apple's design intentions.",
+      "insight": "Critical take on built-in apps generates engagement through debate and shared frustration."
+    },
+    {
+      "id": "7622433395594841357",
+      "url": "https://www.tiktok.com/@foster5811l5/video/7622433395594841357",
+      "handle": "@foster5811l5",
+      "caption": "#ios #privacyscreen #iphone #foryoupage #update ",
+      "views": 1495268,
+      "likes": 57249,
+      "engRate": "4.29",
+      "classifiedAt": "2026-04-04T21:07:22.482Z",
+      "format": "App Demo",
+      "industry": "Lifestyle",
+      "hook": "Feature demo of new iOS privacy capability catches attention with visual appeal.",
+      "insight": "Brief demos of hidden OS features work well for tech-savvy audiences seeking optimization tips."
+    },
+    {
+      "id": "7615290218811329814",
+      "url": "https://www.tiktok.com/@aiko_moon.01/video/7615290218811329814",
+      "handle": "@aiko_moon.01",
+      "caption": "Cutecore free games 🍓 #cutecore #games #cutecore🎀🦴🍮🐾 #cutecorefyp #cutegame ",
+      "views": 188454,
+      "likes": 13864,
+      "engRate": "7.71",
+      "classifiedAt": "2026-04-04T21:07:22.482Z",
+      "format": "Silent UGC",
+      "industry": "Games",
+      "hook": "Aesthetic-driven game discovery appeals to niche community through visual style.",
+      "insight": "Silent gameplay footage lets the visual appeal and vibe do the selling for indie games."
+    },
+    {
+      "id": "7623100300143955223",
+      "url": "https://www.tiktok.com/@hackphonew/video/7623100300143955223",
+      "handle": "@hackphonew",
+      "caption": "The 3 best iPhone tricks everyone should use 🔥 #apple #iphone #iphone17 ",
+      "views": 337468,
+      "likes": 8717,
+      "engRate": "2.77",
+      "classifiedAt": "2026-04-04T21:07:22.482Z",
+      "format": "Hook+Demo",
+      "industry": "Lifestyle",
+      "hook": "Promise of exclusive iPhone tricks that everyone should know creates FOMO.",
+      "insight": "Numbered tip format with high-value hacks is inherently shareable and positions creator as expert."
+    },
+    {
+      "id": "7624237357306268961",
+      "url": "https://www.tiktok.com/@theibuddy/video/7624237357306268961",
+      "handle": "@theibuddy",
+      "caption": "apple kinda doesn’t let us know this 🤦‍♂️📲 #ios26 #iphone #tip #update #liquidglass ",
+      "views": 441460,
+      "likes": 7878,
+      "engRate": "1.88",
+      "classifiedAt": "2026-04-04T21:07:22.482Z",
+      "format": "App Demo",
+      "industry": "Lifestyle",
+      "hook": "Conspiracy angle that Apple hides features creates intrigue and validation.",
+      "insight": "Framing tips as hidden secrets taps into discovery fantasy and shareability."
+    },
+    {
+      "id": "7615093533149498655",
+      "url": "https://www.tiktok.com/@techtiff/video/7615093533149498655",
+      "handle": "@techtiff",
+      "caption": "You trust your phone with your passwords, photos, and wallet. But if it goes missing, most people have no system. This shortcut lets a trusted contact send a specific text message that makes your iPho",
+      "views": 175385,
+      "likes": 6806,
+      "engRate": "5.45",
+      "classifiedAt": "2026-04-04T21:07:22.482Z",
+      "format": "Hook+Demo",
+      "industry": "Lifestyle",
+      "hook": "Security threat scenario demonstrates real-world use case for iPhone shortcut.",
+      "insight": "Practical security solution with emotional stakes makes a native feature feel like a must-have tool."
+    },
+    {
+      "id": "7623069355995106590",
+      "url": "https://www.tiktok.com/@aminadovy/video/7623069355995106590",
+      "handle": "@aminadovy",
+      "caption": "#ios #iphone #techtok #viral",
+      "views": 726413,
+      "likes": 5910,
+      "engRate": "1.09",
+      "classifiedAt": "2026-04-04T21:07:22.482Z",
+      "format": "App Demo",
+      "industry": "Lifestyle",
+      "hook": "Minimal caption with visual hook relies on tech community trending culture.",
+      "insight": "Tech creators trust aesthetics and trending sounds over explicit messaging for core audience."
+    },
+    {
+      "id": "7621956515884305695",
+      "url": "https://www.tiktok.com/@smartphonetoolkit/video/7621956515884305695",
+      "handle": "@smartphonetoolkit",
+      "caption": "Stop charging your iPhone every day ⚠️ this is what’s killing your battery Quick iPhone battery tips that actually work: • Update iOS to fix hidden battery drain • Turn off background app refresh for ",
+      "views": 333518,
+      "likes": 5844,
+      "engRate": "2.05",
+      "classifiedAt": "2026-04-04T21:07:22.482Z",
+      "format": "Hook+Demo",
+      "industry": "Lifestyle",
+      "hook": "Common pain point (daily charging) promises actionable fixes with urgency.",
+      "insight": "Solution-focused iOS tips with concrete steps build trust and position creator as helpful optimizer."
+    },
+    {
+      "id": "7618789180730101006",
+      "url": "https://www.tiktok.com/@ktokonkwo/video/7618789180730101006",
+      "handle": "@ktokonkwo",
+      "caption": "These settings can work on any iPhone 🤞🏾‼️ #iphone #Tech #iphone17",
+      "views": 93590,
+      "likes": 5207,
+      "engRate": "5.74",
+      "classifiedAt": "2026-04-04T21:07:22.482Z",
+      "format": "App Demo",
+      "industry": "Lifestyle",
+      "hook": "Universal compatibility promise removes friction from trying recommended settings.",
+      "insight": "Works-on-any-device framing lowers barrier to action for broad iPhone user base."
+    },
+    {
+      "id": "7617484716022730015",
+      "url": "https://www.tiktok.com/@makewithmax/video/7617484716022730015",
+      "handle": "@makewithmax",
+      "caption": "Looks dramatic tho, right? #techtok #prank #fake #iphonetrick ",
+      "views": 348607,
+      "likes": 5111,
+      "engRate": "1.58",
+      "classifiedAt": "2026-04-04T21:07:22.482Z",
+      "format": "App Demo",
+      "industry": "Lifestyle",
+      "hook": "Prank framing makes a normal iPhone feature feel surprising and shareable.",
+      "insight": "Repackaging features as tricks/pranks increases virality through novelty perception."
+    },
+    {
+      "id": "7614911203634138375",
+      "url": "https://www.tiktok.com/@talha_reviews/video/7614911203634138375",
+      "handle": "@talha_reviews",
+      "caption": "Li Crown App Reality ✅ #LearnOnTikTok #samajhkayseekho #talhareviews #licrownapp #Tech ",
+      "views": 571726,
+      "likes": 41191,
+      "engRate": "7.75",
+      "classifiedAt": "2026-04-04T21:07:22.482Z",
+      "format": "Talking Head",
+      "industry": "Finance",
+      "hook": "App review validates legitimacy of earning/reward app with real-user testimony.",
+      "insight": "Direct review format with creator credibility signals builds trust for financial/earning apps."
+    },
+    {
+      "id": "7618997524082347286",
+      "url": "https://www.tiktok.com/@van1lla.rants/video/7618997524082347286",
+      "handle": "@van1lla.rants",
+      "caption": "picnic app #rant #rantvideo #xyzabc #asmr #viral ",
+      "views": 168585,
+      "likes": 8839,
+      "engRate": "5.52",
+      "classifiedAt": "2026-04-04T21:07:22.482Z",
+      "format": "Talking Head",
+      "industry": "Lifestyle",
+      "hook": "ASMR rant format creates novelty angle for app criticism.",
+      "insight": "Pairing app critique with trending audio format makes negative reviews more engaging."
+    },
+    {
+      "id": "7624126171185302792",
+      "url": "https://www.tiktok.com/@nwa.otu.network/video/7624126171185302792",
+      "handle": "@nwa.otu.network",
+      "caption": "“Install These 4 Apps RIGHT NOW… You’ll Thank Me Later 🔥”#MustHaveApps #TechTips #SmartphoneApps #AndroidApps #iPhoneApps ",
+      "views": 78459,
+      "likes": 3992,
+      "engRate": "6.19",
+      "classifiedAt": "2026-04-04T21:07:22.482Z",
+      "format": "Hook+Demo",
+      "industry": "Lifestyle",
+      "hook": "Urgency-driven 'install now' language with multi-app curation creates FOMO.",
+      "insight": "Bundled app recommendations with deadline framing drive immediate action from viewers."
+    },
+    {
+      "id": "7622394257868999966",
+      "url": "https://www.tiktok.com/@bu_gha1/video/7622394257868999966",
+      "handle": "@bu_gha1",
+      "caption": "Forza horizon 5 mobile 🥶🔥 #forzahorizon #viraltiktok ",
+      "views": 112983,
+      "likes": 2118,
+      "engRate": "3.15",
+      "classifiedAt": "2026-04-04T21:07:22.482Z",
+      "format": "Silent UGC",
+      "industry": "Games",
+      "hook": "Gameplay footage of major console game on mobile showcases technical achievement.",
+      "insight": "Silent game demo lets impressive graphics/performance speak for themselves to gaming audience."
+    },
+    {
+      "id": "7622496422398676237",
+      "url": "https://www.tiktok.com/@ezra.psl/video/7622496422398676237",
+      "handle": "@ezra.psl",
+      "caption": "Official PSL Scores with @PSL App | #jeremymeeks #jeremymeeksedit #bp #fyp #viral ",
+      "views": 2526896,
+      "likes": 335241,
+      "engRate": "13.59",
+      "classifiedAt": "2026-04-04T23:15:49.290Z",
+      "format": "Silent UGC",
+      "industry": "Entertainment",
+      "hook": "Celebrity mention paired with official app branding creates intrigue.",
+      "insight": "Leveraging recognizable names with app logos builds credibility and curiosity in silent format."
+    },
+    {
+      "id": "7623082203286637837",
+      "url": "https://www.tiktok.com/@juliakcrist/video/7623082203286637837",
+      "handle": "@juliakcrist",
+      "caption": "get your life together with  calendar!!! 💗📆 here is my simple but aesthetic apple calendar setup that actually keeps you organized + productive!!!   #applecalendar #productivitytips #digitalplannin",
+      "views": 164573,
+      "likes": 16290,
+      "engRate": "10.30",
+      "classifiedAt": "2026-04-04T23:15:49.290Z",
+      "format": "App Demo",
+      "industry": "Lifestyle",
+      "hook": "Promise of aesthetic organization and productivity through native app setup.",
+      "insight": "Demonstrating real-world aesthetic use cases makes productivity tools feel aspirational and achievable."
+    },
+    {
+      "id": "7621318112004132126",
+      "url": "https://www.tiktok.com/@oliviaowassa/video/7621318112004132126",
+      "handle": "@oliviaowassa",
+      "caption": "Budgeting notes process is here!!! Lmk if there’s anything else you’d be interested in seeing!! #fyp #organization #notesapp #foryou #foryoupage  ",
+      "views": 136823,
+      "likes": 15587,
+      "engRate": "11.70",
+      "classifiedAt": "2026-04-04T23:15:49.290Z",
+      "format": "App Demo",
+      "industry": "Lifestyle",
+      "hook": "Showing organizational process inside a native app sparks interest in personal productivity.",
+      "insight": "Detailed process walkthroughs make simple apps feel like valuable lifestyle solutions."
+    },
+    {
+      "id": "7614150600984481054",
+      "url": "https://www.tiktok.com/@cool407773/video/7614150600984481054",
+      "handle": "@cool407773",
+      "caption": "🌟 Continue the story here  👉🏻 📲 Download the \"GoodNovel\" app  🔍 search for \"656946\", and watch the full series ✨! #GoodNovel ",
+      "views": 269942,
+      "likes": 20542,
+      "engRate": "7.73",
+      "classifiedAt": "2026-04-04T23:15:49.290Z",
+      "format": "Hook+Demo",
+      "industry": "Entertainment",
+      "hook": "Story cliffhanger drives users to download the app to continue watching.",
+      "insight": "Using narrative hooks combined with direct CTA links creates frictionless conversion path."
+    },
+    {
+      "id": "7614725209039490324",
+      "url": "https://www.tiktok.com/@trysnaplog/video/7614725209039490324",
+      "handle": "@trysnaplog",
+      "caption": "Send it to someone who needs to hear this ;) Join the waitlist for Snaplog app!! Link in the bio #cuteanimation #funnyanimation ",
+      "views": 368911,
+      "likes": 13422,
+      "engRate": "8.05",
+      "classifiedAt": "2026-04-04T23:15:49.290Z",
+      "format": "Animation",
+      "industry": "Lifestyle",
+      "hook": "Cute animation paired with relatable messaging encourages friend-sharing.",
+      "insight": "Emotional animation design combined with social sharing angle amplifies organic reach."
+    },
+    {
+      "id": "7620494715212909855",
+      "url": "https://www.tiktok.com/@dylan.kirshen/video/7620494715212909855",
+      "handle": "@dylan.kirshen",
+      "caption": "The best!!!!🕺🏼🕺🏼 @Want Locker #wantlocker #fashion #shopping #onlineshopping #fyp ",
+      "views": 2826060,
+      "likes": 13372,
+      "engRate": "0.48",
+      "classifiedAt": "2026-04-04T23:15:49.290Z",
+      "format": "Silent UGC",
+      "industry": "Lifestyle",
+      "hook": "Brief celebration of shopping app with popular influencer tag.",
+      "insight": "Short, celebratory clips with influencer mentions create viral-friendly social proof."
+    },
+    {
+      "id": "7621581299970608404",
+      "url": "https://www.tiktok.com/@slow.english.podcast/video/7621581299970608404",
+      "handle": "@slow.english.podcast",
+      "caption": "Stop memorizing vocabulary… start speaking!! Practice real life situations, like ordering food, or talking at the airport! And using this app @easyspeakai   https://easytalkai.go.link/4LhEQ Do you wan",
+      "views": 346431,
+      "likes": 13267,
+      "engRate": "4.01",
+      "classifiedAt": "2026-04-04T23:15:49.290Z",
+      "format": "Talking Head",
+      "industry": "Education",
+      "hook": "Repositioning language learning from memorization to real-world conversation practice.",
+      "insight": "Shifting the value proposition from boring to practical makes educational apps feel genuinely useful."
+    },
+    {
+      "id": "7623707941467720968",
+      "url": "https://www.tiktok.com/@beat9985f9r/video/7623707941467720968",
+      "handle": "@beat9985f9r",
+      "caption": "Copy the link → Download the Keling App → Get this JoJo Steel Ball Run live wallpaper instantly! #steelballrun #jojo #sbr #KLingCreators #KlingAI ",
+      "views": 203129,
+      "likes": 12482,
+      "engRate": "7.09",
+      "classifiedAt": "2026-04-04T23:15:49.290Z",
+      "format": "Text-Heavy",
+      "industry": "Entertainment",
+      "hook": "Direct download instructions paired with niche fandom content creates targeted appeal.",
+      "insight": "Step-by-step CTAs combined with niche interest content drives high-intent downloads."
+    },
+    {
+      "id": "7623806785949928718",
+      "url": "https://www.tiktok.com/@obsessedwithcashews/video/7623806785949928718",
+      "handle": "@obsessedwithcashews",
+      "caption": "Click the link in my bio for ALL recipes 😍 For all of you asking - the app link for Osta is in my bio or you can search “Osta Recipes” on the App Store or Google Play store 🫶 Brownie Batter Lava Cak",
+      "views": 191778,
+      "likes": 11873,
+      "engRate": "7.33",
+      "classifiedAt": "2026-04-04T23:15:49.290Z",
+      "format": "App Demo",
+      "industry": "Lifestyle",
+      "hook": "Showing app-exclusive recipe content creates FOMO for viewers.",
+      "insight": "Demonstrating exclusive in-app content while providing bio links creates multi-channel conversion strategy."
+    },
+    {
+      "id": "7615540903318408470",
+      "url": "https://www.tiktok.com/@sebintel/video/7615540903318408470",
+      "handle": "@sebintel",
+      "caption": "Access unlimited video and image generation, with all premium AI tools available for free in one place. #ai #AItools #VideoCreation #ImageGeneration #TechTools #DigitalArt",
+      "views": 197420,
+      "likes": 8797,
+      "engRate": "5.62",
+      "classifiedAt": "2026-04-04T23:15:49.290Z",
+      "format": "Text-Heavy",
+      "industry": "B2B",
+      "hook": "Positioning AI tools as free and accessible in one platform creates immediate value perception.",
+      "insight": "Emphasizing accessibility and all-in-one functionality overcomes tool fragmentation objections."
+    },
+    {
+      "id": "7624690746511084831",
+      "url": "https://www.tiktok.com/@billionaires450/video/7624690746511084831",
+      "handle": "@billionaires450",
+      "caption": "MKBHD Reveals top 5 apps he uses daily #fame #devices #gaming #billionaire #apple ",
+      "views": 56754,
+      "likes": 1669,
+      "engRate": "3.10",
+      "classifiedAt": "2026-04-04T23:15:49.290Z",
+      "format": "Talking Head",
+      "industry": "B2B",
+      "hook": "Celebrity expert recommendation creates aspirational credibility for daily-use apps.",
+      "insight": "Third-party expert validation builds trust more effectively than direct product marketing."
+    },
+    {
+      "id": "7619027496800931102",
+      "url": "https://www.tiktok.com/@layla_bump/video/7619027496800931102",
+      "handle": "@layla_bump",
+      "caption": "It’s called Bump!!!  #socialapps #apprecommendation #fyp #techtrends #socialmedia  ",
+      "views": 133337,
+      "likes": 799,
+      "engRate": "0.60",
+      "classifiedAt": "2026-04-04T23:15:49.290Z",
+      "format": "Talking Head",
+      "industry": "Entertainment",
+      "hook": "Simple app name reveal with trending social angle piques curiosity.",
+      "insight": "Direct app recommendation from relatable creator with social positioning drives organic adoption."
+    },
+    {
+      "id": "7623634747998211358",
+      "url": "https://www.tiktok.com/@manuel.4281/video/7623634747998211358",
+      "handle": "@manuel.4281",
+      "caption": "The best comfort. #apple #ios26 #appleintelligence #techtok #iphone ",
+      "views": 177086,
+      "likes": 13287,
+      "engRate": "7.79",
+      "classifiedAt": "2026-04-04T23:15:57.935Z",
+      "format": "App Demo",
+      "industry": "Lifestyle",
+      "hook": "Promises to show the best comfort feature in iOS 26.",
+      "insight": "Product comfort angle creates emotional resonance beyond typical feature demos."
+    },
+    {
+      "id": "7614610583073180958",
+      "url": "https://www.tiktok.com/@appletipsdaily/video/7614610583073180958",
+      "handle": "@appletipsdaily",
+      "caption": "How to make your iPhone display look better in iOS 26 📲 #fyp #ios #iphone #viral #ios26 ",
+      "views": 854269,
+      "likes": 13132,
+      "engRate": "1.67",
+      "classifiedAt": "2026-04-04T23:15:57.935Z",
+      "format": "App Demo",
+      "industry": "Lifestyle",
+      "hook": "Teaches viewers how to make iPhone display look better with iOS 26.",
+      "insight": "Step-by-step instructional format drives engagement through practical utility."
+    },
+    {
+      "id": "7617916430863928598",
+      "url": "https://www.tiktok.com/@hackphonew/video/7617916430863928598",
+      "handle": "@hackphonew",
+      "caption": "4 iOS 26 tips that you really need to use on your iPhone 🔥 #apple #iphone #iphone17 ",
+      "views": 177368,
+      "likes": 4510,
+      "engRate": "2.80",
+      "classifiedAt": "2026-04-04T23:15:57.935Z",
+      "format": "App Demo",
+      "industry": "Lifestyle",
+      "hook": "Reveals 4 essential iOS 26 tips you need to use.",
+      "insight": "List-based format with fire emoji urgency creates FOMO and click-through motivation."
+    },
+    {
+      "id": "7618582113851411725",
+      "url": "https://www.tiktok.com/@kymieann/video/7618582113851411725",
+      "handle": "@kymieann",
+      "caption": "The app that actually takes the guest work out of being a creator so that you can actually be successful  @hitfinds_official #hitfinds #tiktokshopaffiliate #tiktokshop  ",
+      "views": 132038,
+      "likes": 381,
+      "engRate": "0.32",
+      "classifiedAt": "2026-04-04T23:15:57.935Z",
+      "format": "Hook+Demo",
+      "industry": "B2B",
+      "hook": "App that removes the 'guest work' burden from content creators.",
+      "insight": "Pain-point hook focused on creator efficiency resonates with target audience's daily frustration."
+    },
+    {
+      "id": "7621549271141190934",
+      "url": "https://www.tiktok.com/@doctor.phone50/video/7621549271141190934",
+      "handle": "@doctor.phone50",
+      "caption": "Hidden iPhone Speaker Cleaning Trick 🔊 Water or dust stuck in your phone speaker? Try this simple trick using Clean Sound to push out water and dirt in seconds. Turn your volume to 100% and watch the",
+      "views": 483511,
+      "likes": 6457,
+      "engRate": "1.98",
+      "classifiedAt": "2026-04-04T23:15:57.935Z",
+      "format": "App Demo",
+      "industry": "Lifestyle",
+      "hook": "Shows hidden iPhone speaker cleaning trick using Clean Sound app.",
+      "insight": "Visual demo of app solving a specific problem (water/dust removal) drives credibility through tangible results."
+    },
+    {
+      "id": "7614318301224750350",
+      "url": "https://www.tiktok.com/@rollwithkaran/video/7614318301224750350",
+      "handle": "@rollwithkaran",
+      "caption": "Secret App You Need to Know 🤫 (comment “APP” for the secret app) #iphonetips #app #MustHaveApp  #creatorsearchinsights ",
+      "views": 211557,
+      "likes": 3838,
+      "engRate": "2.23",
+      "classifiedAt": "2026-04-04T23:15:57.935Z",
+      "format": "Hook+Demo",
+      "industry": "Lifestyle",
+      "hook": "Teases a secret app viewers need to know about.",
+      "insight": "Mystery hook with engagement ask (comment 'APP') drives high comment interaction and algorithm boost."
+    },
+    {
+      "id": "7622748243302124818",
+      "url": "https://www.tiktok.com/@decotechie/video/7622748243302124818",
+      "handle": "@decotechie",
+      "caption": "This is how to hide apps on your iPhone  #iphonetricks #TechTips #iphone17 #decotechie #foryoupage ",
+      "views": 102330,
+      "likes": 3525,
+      "engRate": "3.70",
+      "classifiedAt": "2026-04-04T23:15:57.935Z",
+      "format": "App Demo",
+      "industry": "Lifestyle",
+      "hook": "Teaches how to hide apps on iPhone.",
+      "insight": "Practical privacy feature demo appeals to security-conscious users seeking hidden functionality."
+    },
+    {
+      "id": "7618296028399275277",
+      "url": "https://www.tiktok.com/@prdedits_/video/7618296028399275277",
+      "handle": "@prdedits_",
+      "caption": "Help I’m still at the restaurant… Scp: sirexellascp and @zaynsweeknd  Song: Futile Devices-Sufjan Stevens  App: CapCut Pro  #larrystylinson #larry #harrystyles #louistomlinson #larrystylinsonedit ",
+      "views": 1834543,
+      "likes": 372371,
+      "engRate": "21.47",
+      "classifiedAt": "2026-04-04T23:15:57.935Z",
+      "format": "App Demo",
+      "industry": "Entertainment",
+      "hook": "CapCut Pro used to create a Harry Styles fan edit.",
+      "insight": "Embedded app mention in creative context shows real usage by content creators for video editing."
     }
   ],
   "patterns": {
     "topFormats": [
       {
         "format": "Animation",
-        "count": 2,
-        "avgEngRate": 15.3
+        "count": 3,
+        "avgEngRate": 12.9
       },
       {
         "format": "Silent UGC",
-        "count": 36,
-        "avgEngRate": 10.4
+        "count": 41,
+        "avgEngRate": 10.1
+      },
+      {
+        "format": "Talking Head",
+        "count": 51,
+        "avgEngRate": 9.7
       },
       {
         "format": "Slideshow",
@@ -2681,24 +3302,19 @@
         "avgEngRate": 9.7
       },
       {
-        "format": "Talking Head",
-        "count": 42,
-        "avgEngRate": 9.6
-      },
-      {
-        "format": "App Demo",
-        "count": 45,
-        "avgEngRate": 8.6
-      },
-      {
-        "format": "Hook+Demo",
-        "count": 26,
-        "avgEngRate": 8.5
-      },
-      {
         "format": "Other",
         "count": 1,
         "avgEngRate": 7.8
+      },
+      {
+        "format": "App Demo",
+        "count": 64,
+        "avgEngRate": 7.7
+      },
+      {
+        "format": "Hook+Demo",
+        "count": 34,
+        "avgEngRate": 7.5
       },
       {
         "format": "Reaction+Demo",
@@ -2707,35 +3323,35 @@
       },
       {
         "format": "Text-Heavy",
-        "count": 13,
-        "avgEngRate": 5.5
+        "count": 15,
+        "avgEngRate": 5.6
       }
     ],
     "topIndustries": [
       {
-        "industry": "Entertainment",
-        "count": 55,
-        "avgViews": 4421476
+        "industry": "Lifestyle",
+        "count": 72,
+        "avgViews": 1603014
       },
       {
-        "industry": "Lifestyle",
-        "count": 49,
-        "avgViews": 2051018
+        "industry": "Entertainment",
+        "count": 65,
+        "avgViews": 3842641
       },
       {
         "industry": "Education",
-        "count": 24,
-        "avgViews": 382182
+        "count": 25,
+        "avgViews": 380752
       },
       {
         "industry": "B2B",
-        "count": 19,
-        "avgViews": 4290185
+        "count": 23,
+        "avgViews": 3576664
       },
       {
         "industry": "Health",
-        "count": 17,
-        "avgViews": 1485733
+        "count": 18,
+        "avgViews": 1419700
       },
       {
         "industry": "Unknown",
@@ -2744,8 +3360,8 @@
       },
       {
         "industry": "Games",
-        "count": 9,
-        "avgViews": 1061242
+        "count": 13,
+        "avgViews": 769964
       },
       {
         "industry": "Productivity",
@@ -2754,39 +3370,54 @@
       },
       {
         "industry": "Finance",
-        "count": 1,
-        "avgViews": 123743
+        "count": 2,
+        "avgViews": 347735
       }
     ],
     "formatIndustryMatrix": [
       {
         "format": "App Demo",
         "industry": "Lifestyle",
-        "count": 17
+        "count": 31
       },
       {
         "format": "Silent UGC",
         "industry": "Entertainment",
-        "count": 15
+        "count": 17
+      },
+      {
+        "format": "Talking Head",
+        "industry": "Entertainment",
+        "count": 14
       },
       {
         "format": "Silent UGC",
+        "industry": "Lifestyle",
+        "count": 13
+      },
+      {
+        "format": "Hook+Demo",
         "industry": "Lifestyle",
         "count": 12
       },
       {
         "format": "Talking Head",
-        "industry": "Entertainment",
+        "industry": "Education",
         "count": 12
       },
       {
-        "format": "Talking Head",
-        "industry": "Education",
+        "format": "App Demo",
+        "industry": "Entertainment",
         "count": 11
       },
       {
         "format": "Text-Heavy",
         "industry": "Entertainment",
+        "count": 10
+      },
+      {
+        "format": "Talking Head",
+        "industry": "Lifestyle",
         "count": 9
       },
       {
@@ -2795,29 +3426,19 @@
         "count": 8
       },
       {
-        "format": "Hook+Demo",
-        "industry": "Lifestyle",
-        "count": 7
-      },
-      {
-        "format": "App Demo",
-        "industry": "Entertainment",
-        "count": 7
-      },
-      {
-        "format": "Talking Head",
-        "industry": "Lifestyle",
-        "count": 7
-      },
-      {
         "format": "Talking Head",
         "industry": "Health",
-        "count": 6
+        "count": 7
+      },
+      {
+        "format": "Hook+Demo",
+        "industry": "B2B",
+        "count": 7
       },
       {
         "format": "Hook+Demo",
         "industry": "Entertainment",
-        "count": 5
+        "count": 6
       },
       {
         "format": "Hook+Demo",
@@ -2828,26 +3449,21 @@
         "format": "Silent UGC",
         "industry": "Unknown",
         "count": 5
-      },
-      {
-        "format": "Hook+Demo",
-        "industry": "B2B",
-        "count": 5
       }
     ]
   },
   "learnings": [
-    "**Health + Emotional Transformation** dominates with 25-35% engagement (sobriety 35.18%, faith 25.24%) — position apps as life-changing solutions for niche communities, not feature collections.",
-    "**Hook+Demo Hybrids** outperform pure feature demos by 3-4x (17-35% vs 3-10% engagement) — always pair emotional hooks or problem statements with visible app results, never showcase features without narrative framing.",
-    "**Silent UGC + Lifestyle aesthetics** achieve 14-21% engagement exclusively when tied to relatable moments (bear care 20.70%, aesthetic discovery 18.14%) — collapse to 1-3% for feature tutorials, making this format niche-critical but fragile.",
-    "**Entertainment apps require absurdist hooks or relatable commentary** (15-25% engagement) and must hide the app reveal until the end — direct CTAs and feature showcases collapse to 0.41-1.07% regardless of view count.",
-    "**Talking Head + Authentic Vulnerability** drives 15-18% engagement (dad jokes 18.51%, language struggles 15.58%) — users prioritize emotional authenticity and relatable frustration over instructional clarity by 2.5x.",
-    "**Direct Feature Tutorials** consistently collapse to 2-10% engagement across all categories (language app 3.83-5.61%, app demos 3.28%) — this format is actively rejected by audiences; reframe as problem-solving, not instruction.",
-    "**Slideshow + Curated Lists** achieve 10-15% engagement (trending apps 14.80%, daily-use apps 11.80%) — this is the safest middle ground for risk-averse teams, outperforming pure demos (3-5%) without the niche dependency of Hook+Demo (17-35%).",
-    "**Silent UGC + Niche Community Signaling** through hashtags drives 11-20% engagement (recovery app 9.86%, curiosity hashtag 18.14%) — strategic hashtag pairing is essential for reaching underserved audiences in lifestyle and health categories.",
-    "**Comparison Hooks** (app vs competitor positioning) achieve 11% engagement while building credibility (language app 7.60%, early access flex 11.14%) — position solutions and competitive advantages, not feature clarity.",
-    "**Rare Feature Reveals + Problem-Solving Positioning** drives 10-20% engagement (productivity 10.56%, app guides 11.56%) when highlighting solutions users actively seek — this outperforms aesthetic customization hooks by 3x.",
-    "**Text-Heavy Entertainment** generates viral reach (1M-14M views) but collapses to 1-3% engagement with zero conversion intent — avoid news hooks, political content, and viral trends entirely; they're conversion-toxic despite visibility.",
-    "**B2B and Finance apps underperform across all formats** (0.12-10.98% engagement) except when positioned as accessible/creative solutions (AI mastery 10.98%, side hustle 8.95%) — niche positioning and democratization messaging significantly outperform direct CTAs."
+    "**Talking Head + Personal Endorsement** in Entertainment achieves 39.42% engagement when creators authentically champion a single app feature with branded tags—this is the highest-performing format across all recent data.",
+    "**Hook+Demo Hybrids** in Entertainment consistently deliver 7-17% engagement when pairing absurdist humor (Cantina platform 17.07%) or narrative cliffhangers (story continuation 7.73%) with app reveals—never lead with features.",
+    "**Health + Identity Transformation** dominates at 25-35% engagement exclusively when positioned as life-changing for specific communities (Faith app 25.24%, Sobriety app 35.18%)—generic productivity positioning collapses to 0.57% even at 4.9M views.",
+    "**Talking Head + Vulnerability** in Lifestyle drives 12-17% engagement when creators challenge assumptions (12.57%) or warn against corporate tracking (17.23%)—authentic skepticism outperforms cheerleading by 2x.",
+    "**Entertainment apps require hidden reveals until final frame**—direct CTAs collapse to 0.41-0.60% engagement regardless of reach (1.2M+ views); instead lead with relatable commentary, pranks, or absurdist hooks that obscure the app entirely.",
+    "**CapCut + Entertainment Hybrids** achieve 12-21% engagement when tied to fan culture (Harry Styles edit 21.47%) or hashtag-driven content creation (CapCut hashtag showcase 12.36%)—this is the safest Entertainment bet without niche dependency.",
+    "**B2B apps escape collapse (6-11% engagement) only when positioned as democratization or creative accessibility**—AI mastery 10.98%, side hustle framing 8.95%, or no-code empowerment (8.05%)—direct feature tutorials and tutorials collapse to 0.12-0.31%.",
+    "**Silent UGC + Lifestyle aesthetics collapse to 0.46-2.01% unless tied to community signaling**—Silent UGC only works at 7-20% engagement when paired with niche hashtags (CapCut 12.36%, game aesthetics 7.71%) or relatable moments (walkie-talkie 14.73%).",
+    "**Slideshow curation achieves 10-15% engagement as the safest middle-ground format**—trending apps 14.80%, daily-use apps 11.80%, top 5 picks 12.99%—this outperforms pure demos (3-5%) without requiring niche positioning or viral hooks.",
+    "**Direct feature tutorials and product demos collapse to 1-5% engagement universally**—iPad games 2.93%, language apps 3.83-5.61%, WhatsApp hacks 3.24%, even with 4M+ views—reframe every tutorial as problem-solving, transformation, or community signaling instead.",
+    "**App Demo + Lifestyle productivity achieves 7-11% engagement when showing organizational process or aesthetic setup**—native app organization 11.70%, recipe FOMO 7.79%, home app setup 10.30%—viewers engage with lifestyle aspiration, not features.",
+    "**Text-Heavy viral content generates 1-14M views but collapses to 1-7% conversion intent**—avoid entirely for app promotion; these drive vanity metrics only (trending apps 14.80% views but likely sub-3% intent)."
   ]
 }
