@@ -216,6 +216,40 @@ Return ONLY a JSON array of learning strings:
   return JSON.parse(match[0]);
 }
 
+// ── Agent notes ───────────────────────────────────────────────────────────────
+
+async function generateAgentNotes(videos, learnings, previousReports) {
+  const prevNotes = previousReports.length
+    ? previousReports.map(r => {
+        const match = r.content.match(/## Notes for Future Agents\n([\s\S]*?)(\n##|$)/);
+        return match ? `[${r.name}]\n${match[1].trim()}` : null;
+      }).filter(Boolean).join("\n\n")
+    : "";
+
+  const recentHooks = videos.slice(-50).map(v => `${v.format} | ${v.industry} | ${v.engRate}% | ${v.hook}`).join("\n");
+
+  const text = await claude(`You are a TikTok UGC intelligence agent. You are writing notes for the next agent that will run tomorrow.
+
+Your current learnings:
+${learnings.join("\n")}
+
+Recent video hooks and formats (last 50):
+${recentHooks}
+
+${prevNotes ? `Previous agents' notes (read these carefully and follow up on open questions):\n${prevNotes}` : ""}
+
+Write a short paragraph (5-8 sentences) called "Notes for Future Agents". Include:
+- Any new anomalies or emerging trends you noticed in today's data that may be worth watching
+- Open questions you couldn't answer with today's data that tomorrow's agent should investigate
+- Any hypothesis you have about why certain formats are performing the way they are
+- Patterns that seem to be strengthening or weakening over time
+
+Write in first person as if leaving a note to your successor. Be specific and analytical, not generic.
+Return only the paragraph text, no headers.`);
+
+  return text.trim();
+}
+
 // ── Patterns ──────────────────────────────────────────────────────────────────
 
 function buildPatterns(videos) {
@@ -283,6 +317,11 @@ async function main() {
   store.learnings = await synthesizeLearnings(store.videos, store.learnings);
   console.log("done");
 
+  // Generate agent notes
+  process.stdout.write("  Writing agent notes... ");
+  const agentNotes = await generateAgentNotes(store.videos, store.learnings, previousReports);
+  console.log("done");
+
   store.lastUpdated = new Date().toISOString();
   store.patterns = buildPatterns(store.videos);
 
@@ -320,6 +359,10 @@ ${store.patterns.topIndustries.map(i => `- **${i.industry}**: ${i.count} videos,
 ## Format × Industry — Top Combos
 
 ${store.patterns.formatIndustryMatrix.slice(0, 8).map(m => `- ${m.format} + ${m.industry}: ${m.count} videos`).join("\n")}
+
+## Notes for Future Agents
+
+${agentNotes}
 `;
   writeFileSync(reportPath, report);
   console.log(`  📝 Saved report: data/learnings/${reportFileName}`);
